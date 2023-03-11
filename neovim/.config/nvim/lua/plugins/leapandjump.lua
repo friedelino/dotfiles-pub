@@ -9,7 +9,7 @@ return {
       end
       return ret
     end,
-    opts = { labeled_modes = "nx" },
+    opts = { labeled_modes = "nx" }
   },
   {
     "ggandor/leap.nvim",

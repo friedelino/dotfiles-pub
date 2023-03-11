@@ -5,7 +5,26 @@ return {
     config = function()
       require('onedark').setup {
         -- style = 'deep'
-        style = 'darker'
+        style = 'darker',
+        -- for dimming searched parts of text, stolen from tokyonight
+        highlights = {
+          LeapBackdrop = {
+            fg = "#545c7e"
+          },
+          LeapLabelPrimary = {
+            bold = true,
+            fg = "#ff007c"
+          },
+          LeapLabelSecondary = {
+            bold = true,
+            fg = "#4fd6be"
+          },
+          LeapMatch = {
+            bg = "#ff007c",
+            bold = true,
+            fg = "#c8d3f5"
+          },
+        }
       }
       require('onedark').load()
       -- vim.cmd.colorscheme 'onedark'
